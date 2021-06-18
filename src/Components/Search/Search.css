@@ -1,0 +1,18 @@
+.search{
+    border: 1px solid black;
+    width: 61px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 60px;
+    border-radius: 50px;
+    background-color: black;
+
+    /* padding-top: 5px; */
+}
+.search>svg{
+    font-size: 40px;
+    padding-top: 11px;
+    padding-left: 3px;
+    color: white;
+}

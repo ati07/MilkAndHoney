@@ -1,0 +1,166 @@
+.home_section1{
+    position: relative;
+    top: 982px;
+    z-index: -1;
+}
+.home_section2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 950px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;
+    z-index: -1;
+}
+.h_p{
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+.home_section2_btn{
+    position: relative;
+    top: 70px
+}
+.home_section2_btn>button,.View_btn>button{
+    height: 80px;
+    width: 200px;
+    border: 5px solid;
+    border-radius: 40px;
+    background-color: #fff;
+    color: #000;
+    border-color: #dfa836;
+}
+.View_btn{
+    position: relative;
+    top: 245px
+}
+.home_services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+.services_logo{
+    height: 150px;
+    width: 150px;
+}
+.home_services_logo{
+    padding: 40px;
+    margin: 15px;
+}
+.home_section3{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 1460px;
+    z-index: -1;
+}
+.home_section4{
+    position: absolute;
+    top: 2060px;
+    width: 100%;
+    height: 1675px;
+    background-image: url('https://milkandhoneydigital.com/wp-content/uploads/2018/04/texture.png');
+    background-color:#1f2732;
+    background-attachment: fixed;
+    z-index: -1;
+    /* background-position: ; */
+    transform: skew(0deg,3deg);
+    color: #fff;
+}
+.home_section5{
+    position: absolute;
+    top: 2128px;
+    width: 100%;
+    z-index: -1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home_section5_1{
+    display: flex;
+    padding-top: 25px;
+    align-items: center;
+    z-index: -1;
+}
+.home_section5_1_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 25px;
+    align-items: center;
+    z-index: -1;
+
+}
+.strategy_reverse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    padding-top: 0;
+}
+.strategy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 79px;
+    padding-top: 0;
+}
+.strategy_img{
+    margin-left: -34px;
+}
+.strategy_img>img{
+ width: 284px;
+ height: 280px;
+}
+.stategy_p{
+    margin: 20px;
+    padding: 59px;
+    text-align: left;
+    font-size: 20px;
+}
+.home_section6{
+    position: absolute;
+    top: 3770px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    /* border: 1px solid black;
+    background-color: chartreuse; */
+    width: 100%;
+    z-index: -1;
+}
+.brand_h1{
+    display: flex;
+    position: absolute;
+    top: 75px;
+    margin: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.Service_btn{
+    position: relative;
+    top: 3258px;
+    /* left: -32px */
+}
+.Service_btn>button{
+    height: 80px;
+    width: 250px;
+    /* border: 1px solid; */
+    border-radius: 40px;
+    background-color: #fff;
+    color: #000000;
+    /* border-color: #dfa836; */
+
+}
+.Service_btn>button:hover{
+    background-color: aliceblue;
+}
