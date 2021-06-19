@@ -164,3 +164,23 @@
 .Service_btn>button:hover{
     background-color: aliceblue;
 }
+.home_section7{
+    position: relative;
+    top: 4000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: -1;
+}
+.home_section8{
+    position: relative;
+    top:3980px;;
+    background-image: url('https://milkandhoneydigital.com/wp-content/uploads/2018/04/texture.png');
+    background-color:#1f2732;
+    background-attachment: fixed;
+    height: 600px;
+    /* z-index: -1; */
+    width: 100%;
+    z-index: -12;
+}

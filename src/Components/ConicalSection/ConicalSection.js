@@ -1,13 +1,13 @@
 import React from 'react'
 import './ConicalSection.css'
 
-function ConicalSection() {
+function ConicalSection({clr}) {
     return (
         <div className='ConicalSection'>
-            <div className='section_left'>
+            <div className='section_left' style={ clr?{backgroundColor: clr}:{}}>
 
             </div>
-            <div className='section_right'>
+            <div className='section_right' style={clr?{backgroundColor: clr}:{}}>
 
             </div>
         </div>
