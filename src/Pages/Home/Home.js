@@ -8,14 +8,20 @@ import Slider from "../../Components/Slider/Slider";
 import ConicalSectionabove from "../../Components/ConicalSectionabove/ConicalSectionabove";
 import FooterupSection from "../../Components/FooterupSection/FooterupSection";
 import Footer from "../../Components/Footer/Footer";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { img } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 function Home() {
   const [x, setX] = useState(20);
   const [y, setY] = useState(50);
   const [images,setImages]=useState([])
+
+  useEffect(()=>{
+    AOS.init({duration:1500})
+  })
   // const Xvalue = useRef(0)
   // useEffect(()=>{
   //   setImages([
@@ -24,7 +30,7 @@ function Home() {
   // })
   const position = () => {
     if (window.pageYOffset > 1600 && window.pageXOffset < 3300) {
-      console.log('window',window.pageYOffset)
+      // console.log('window',window.pageYOffset)
       setX(window.pageYOffset);
     }
     
@@ -38,7 +44,7 @@ function Home() {
     
     
   },[]);
-  console.log('X',x);
+  // console.log('X',x);
 
   return (
     <div>
@@ -72,18 +78,18 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="home_section2_btn">
+        <div data-aos="fade-up" className="home_section2_btn">
           <Button>Our Work</Button>
         </div>
       </div>
-      <div className="home_section3">
+      <div  className="home_section3">
         <div className="home_section3_1">
           <div style={{ margin: 45 }}>
-            <LazyLoadImage effect="blur" src="/img/Navy-Dashed-e1593621199628.png" />
+            <img effect="blur" src="/img/Navy-Dashed-e1593621199628.png" />
           </div>
           <div className="home_services">
-            <div className="home_services_logo">
-              <LazyLoadImage  effect="blur" className="services_logo" src="/img/Graphics-Icon.png" />
+            <div data-aos="fade-left" className="home_services_logo">
+              <img  effect="blur" className="services_logo" src="https://milkandhoneydigital.com/wp-content/uploads/2021/06/Graphics-Icon.png" />
               <h1 style={{ lineHeight: 1, fontSize: 25, fontWeight: 600 }}>
                 Graphic Design
               </h1>
@@ -92,8 +98,8 @@ function Home() {
                 communicate with your
               </p>
             </div>
-            <div className="home_services_logo">
-              <LazyLoadImage effect="blur" className="services_logo" src="/img/Email-Icon.png" />
+            <div data-aos="fade-right" className="home_services_logo">
+              <img effect="blur" className="services_logo" src="https://milkandhoneydigital.com/wp-content/uploads/2021/06/Email-Icon.png" />
               <h1 style={{ lineHeight: 1, fontSize: 25, fontWeight: 600 }}>
                 Email Marketing
               </h1>
@@ -103,8 +109,8 @@ function Home() {
               </p>
               <p></p>
             </div>
-            <div className="home_services_logo">
-              <LazyLoadImage  effect="blur" className="services_logo" src="/img/SMM-Icon.png" />
+            <div data-aos="fade-left" className="home_services_logo">
+              <img  effect="blur" className="services_logo" src="https://milkandhoneydigital.com/wp-content/uploads/2018/03/SMM-Icon.png" />
               <h1 style={{ lineHeight: 1, fontSize: 25, fontWeight: 600 }}>
                 Social Media <br />
                 Management
@@ -114,8 +120,8 @@ function Home() {
                 strategies to drive traffic to
               </p>
             </div>
-            <div className="home_services_logo">
-              <LazyLoadImage effect="blur" className="services_logo" src="/img/Web-Icon.png" />
+            <div data-aos="fade-right" className="home_services_logo">
+              <img effect="blur" className="services_logo" src="https://milkandhoneydigital.com/wp-content/uploads/2018/03/Web-Icon.png" />
               <h1 style={{ lineHeight: 1, fontSize: 25, fontWeight: 600 }}>
                 Web Design
               </h1>
@@ -143,12 +149,16 @@ function Home() {
           <img src="/img/Navy-Dashed-e1593621199628.png" />
         </div>
         <div className="home_section5_1">
-          <div className="strategy">
+          <div data-aos="fade-left" className="strategy">
             <h1 style={{ fontSize: "12em", padding: 0, lineHeight: 0 }}>01</h1>
             <h2 style={{ fontSize: "3em" }}>Strategy</h2>
           </div>
           <div className="strategy_img">
-            <LazyLoadImage  effect="blur" src="/img/strategy-round.png" />
+            <img  effect="blur" src="https://milkandhoneydigital.com/wp-content/uploads/2020/07/strategy-round.png" />
+          </div>
+          <div className='ArrowR' style={{position: 'relative',
+    top: 160}}>
+            <img src='https://milkandhoneydigital.com/wp-content/themes/dotdigital/css/../img/right_arrow.png' alt='ArrowRight'/>
           </div>
           <div className="stategy_p">
             <p>
@@ -158,12 +168,17 @@ function Home() {
           </div>
         </div>
         <div className="home_section5_1_reverse">
-          <div className="strategy_reverse">
+          <div data-aos="fade-right" className="strategy_reverse">
             <h1 style={{ fontSize: "12em", padding: 0, lineHeight: 0 }}>02</h1>
             <h2 style={{ fontSize: "3em" }}>Design</h2>
           </div>
+          
           <div className="strategy_img">
-            <LazyLoadImage effect="blur" src="/img/design-round.png" />
+            <img effect="blur" src="https://milkandhoneydigital.com/wp-content/uploads/2020/07/design-round.png" />
+          </div>
+          <div className='ArrowL' style={{position: 'relative',
+    top: 160,right: 25}}>
+            <img src='https://milkandhoneydigital.com/wp-content/themes/dotdigital/css/../img/left_arrow.png'/>
           </div>
           <div className="stategy_p">
             <p>
@@ -174,12 +189,17 @@ function Home() {
           </div>
         </div>
         <div className="home_section5_1">
-          <div className="strategy">
+          <div data-aos="fade-left" className="strategy">
             <h1 style={{ fontSize: "12em", padding: 0, lineHeight: 0 }}>03</h1>
             <h2 style={{ fontSize: "3em" }}>Develop</h2>
           </div>
+          
           <div className="strategy_img">
-            <LazyLoadImage effect="blur" src="/img/develop-round.png" />
+            <img effect="blur" src="https://milkandhoneydigital.com/wp-content/uploads/2020/07/develop-round.png" />
+          </div>
+          <div className='ArrowR' style={{position: 'relative',
+    top: 160}}>
+            <img src='https://milkandhoneydigital.com/wp-content/themes/dotdigital/css/../img/right_arrow.png' alt='ArrowRight'/>
           </div>
           <div className="stategy_p">
             <p>
@@ -190,13 +210,14 @@ function Home() {
           </div>
         </div>
         <div className="home_section5_1_reverse">
-          <div className="strategy_reverse">
+          <div data-aos="fade-right" className="strategy_reverse">
             <h1 style={{ fontSize: "12em", padding: 0, lineHeight: 0 }}>04</h1>
             <h2 style={{ fontSize: "3em" }}>Support</h2>
           </div>
           <div className="strategy_img">
-            <LazyLoadImage  effect="blur" src="/img/support-round.png" />
+            <img  effect="blur" src="https://milkandhoneydigital.com/wp-content/uploads/2020/07/support-round.png" />
           </div>
+          
           <div className="stategy_p">
             <p>
               We'll be at your side the entire way. We are available 7 days a
@@ -215,21 +236,21 @@ function Home() {
           <img src="/img/Navy-Dashed-e1593621199628.png" />
         </div>
       </div>
-      <div className='Service_btn'>
+      <div data-aos="fade-up" className='Service_btn'>
         <Button>
           VIEW ALL SERVICES
         </Button>
       </div>
       
       <div className="home_section6">
-        <div style={{ backgroundColor: "#fff", width: 1,position:'relative',top: -228 }}>
+        <div style={{ backgroundColor: "#fff", width: 1,position:'relative',top: -111 }}>
           <img src="/img/Navy-Dashed-e1593621199628.png" />
         </div>
         <div className='brand_h1'>
           <h1>Brands We've Worked With</h1>
         </div>
         <Slider/>
-        <div className="View_btn">
+        <div data-aos="fade-up" className="View_btn">
           <Button>VIEW MORE</Button>
         </div>
         

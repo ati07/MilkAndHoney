@@ -1,0 +1,75 @@
+.about{
+    position: absolute;
+    margin-top: 124px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    flex-direction: column;
+    z-index: -1;
+}
+.heading_about{
+    /* padding: 50px; */
+    background-image: url('https://milkandhoneydigital.com/wp-content/themes/dotdigital/img/parallax/breadcrumbs.jpg');
+    width: 100%;
+    height: 180px;
+    /* background-color: gray; */
+}
+.heading_about>h1{
+    margin-top: 70px;
+    font-size: 4em;
+}
+.about_conicalsection{
+    height: 200px;
+    width: 100%;
+    margin-top: -53px;
+    /* background-image: url('https://milkandhoneydigital.com/wp-content/themes/dotdigital/img/parallax/breadcrumbs.jpg'); */
+
+}
+.about_photo{
+    width: 80%;
+    height: 150%;
+    background-color: #f4f4f5;
+    /* border: 1px solid black; */
+    margin-top: 80px;
+}
+.about_photo>div{
+    margin: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about_photo>div>p{
+    padding-left: 91px;
+    padding-right: 75px;
+    letter-spacing: 2px;
+}
+.about_photo>div>h3{
+    margin: 0;
+    line-height: 2;
+    letter-spacing: 5px;
+    font-size: 1em;
+}
+.about_photo>div>h2{
+    margin: 0;
+    font-weight: 400;
+}
+.AboutSlider{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 313px;
+    position: absolute;
+    top: 1207px;
+    /* z-index: ; */
+    /* border: 1px solid black; */
+}
+.about_footer {
+    position: absolute;
+    top: 1401px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    /* z-index: -1; */
+}
