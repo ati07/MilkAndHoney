@@ -27,13 +27,13 @@
     background-repeat: no-repeat;
     /* width: 100%; */
     /* z-index: -1; */
-    left: 489px;
+    left: 470px;
     height: 43%;
 }
 .Banner_btn{
     position: relative;
     top: 70px;
-    left: -32px
+    left: -11px
 }
 .Banner_btn>button{
     height: 80px;

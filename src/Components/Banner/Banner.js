@@ -6,7 +6,7 @@ function Banner() {
     <div className="banner">
       <div className="banner_section">
         <div className='banner_section1'>
-        <div style={{marginLeft: -487,
+        <div style={{marginLeft: -470,
     width: 1346,marginTop: 41}}>
           <p style={{letterSpacing: 30,marginLeft: 80}}>WELCOME TO</p>
           <h1 style={{fontSize: '6em',

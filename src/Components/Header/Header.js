@@ -3,7 +3,7 @@ import './Header.css'
 import {Link} from 'react-router-dom'
 import Search from '../Search/Search'
 // import Search from './'
-function Header() {
+function Header({clr}) {
     const [active, setActive] = useState(true)
     const pages = {
         Title:['HOME','ABOUT','SERVICES','WORK','CONNECT'],
@@ -20,7 +20,7 @@ function Header() {
     window.addEventListener('scroll',hidden)
     return (
         <>
-        <div className={active?'header':'header_onscroll'}>
+        <div style={{backgroundColor:clr}} className={active?'header':'header_onscroll'}>
             <div className='img_div'>
                 <Link to='/'>
                 <img src='/img/Logo.png' alt='logo'/>

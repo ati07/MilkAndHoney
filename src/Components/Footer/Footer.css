@@ -3,6 +3,12 @@
     flex-direction: column;
     position: absolute;
     /* top: 4100px; */
+    background-image: url('https://milkandhoneydigital.com/wp-content/uploads/2018/04/texture.png');
+    background-color:#1f2732;
+    background-attachment: fixed;
+    height: 500px;
+    /* z-index: -1; */
+    /* width: 100%; */
     justify-content: center;
     align-items: center;
     /* border: 1px solid black;

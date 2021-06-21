@@ -8,12 +8,20 @@ import Slider from "../../Components/Slider/Slider";
 import ConicalSectionabove from "../../Components/ConicalSectionabove/ConicalSectionabove";
 import FooterupSection from "../../Components/FooterupSection/FooterupSection";
 import Footer from "../../Components/Footer/Footer";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 function Home() {
   const [x, setX] = useState(20);
   const [y, setY] = useState(50);
+  const [images,setImages]=useState([])
   // const Xvalue = useRef(0)
+  // useEffect(()=>{
+  //   setImages([
+
+  //   ])
+  // })
   const position = () => {
     if (window.pageYOffset > 1600 && window.pageXOffset < 3300) {
       console.log('window',window.pageYOffset)
@@ -71,11 +79,11 @@ function Home() {
       <div className="home_section3">
         <div className="home_section3_1">
           <div style={{ margin: 45 }}>
-            <img src="/img/Navy-Dashed-e1593621199628.png" />
+            <LazyLoadImage effect="blur" src="/img/Navy-Dashed-e1593621199628.png" />
           </div>
           <div className="home_services">
             <div className="home_services_logo">
-              <img className="services_logo" src="/img/Graphics-Icon.png" />
+              <LazyLoadImage  effect="blur" className="services_logo" src="/img/Graphics-Icon.png" />
               <h1 style={{ lineHeight: 1, fontSize: 25, fontWeight: 600 }}>
                 Graphic Design
               </h1>
@@ -85,7 +93,7 @@ function Home() {
               </p>
             </div>
             <div className="home_services_logo">
-              <img className="services_logo" src="/img/Email-Icon.png" />
+              <LazyLoadImage effect="blur" className="services_logo" src="/img/Email-Icon.png" />
               <h1 style={{ lineHeight: 1, fontSize: 25, fontWeight: 600 }}>
                 Email Marketing
               </h1>
@@ -96,7 +104,7 @@ function Home() {
               <p></p>
             </div>
             <div className="home_services_logo">
-              <img className="services_logo" src="/img/SMM-Icon.png" />
+              <LazyLoadImage  effect="blur" className="services_logo" src="/img/SMM-Icon.png" />
               <h1 style={{ lineHeight: 1, fontSize: 25, fontWeight: 600 }}>
                 Social Media <br />
                 Management
@@ -107,7 +115,7 @@ function Home() {
               </p>
             </div>
             <div className="home_services_logo">
-              <img className="services_logo" src="/img/Web-Icon.png" />
+              <LazyLoadImage effect="blur" className="services_logo" src="/img/Web-Icon.png" />
               <h1 style={{ lineHeight: 1, fontSize: 25, fontWeight: 600 }}>
                 Web Design
               </h1>
@@ -140,7 +148,7 @@ function Home() {
             <h2 style={{ fontSize: "3em" }}>Strategy</h2>
           </div>
           <div className="strategy_img">
-            <img src="/img/strategy-round.png" />
+            <LazyLoadImage  effect="blur" src="/img/strategy-round.png" />
           </div>
           <div className="stategy_p">
             <p>
@@ -155,7 +163,7 @@ function Home() {
             <h2 style={{ fontSize: "3em" }}>Design</h2>
           </div>
           <div className="strategy_img">
-            <img src="/img/design-round.png" />
+            <LazyLoadImage effect="blur" src="/img/design-round.png" />
           </div>
           <div className="stategy_p">
             <p>
@@ -171,7 +179,7 @@ function Home() {
             <h2 style={{ fontSize: "3em" }}>Develop</h2>
           </div>
           <div className="strategy_img">
-            <img src="/img/develop-round.png" />
+            <LazyLoadImage effect="blur" src="/img/develop-round.png" />
           </div>
           <div className="stategy_p">
             <p>
@@ -187,7 +195,7 @@ function Home() {
             <h2 style={{ fontSize: "3em" }}>Support</h2>
           </div>
           <div className="strategy_img">
-            <img src="/img/support-round.png" />
+            <LazyLoadImage  effect="blur" src="/img/support-round.png" />
           </div>
           <div className="stategy_p">
             <p>
@@ -231,7 +239,7 @@ function Home() {
             <FooterupSection/>
           </div>
           <div className='home_section8'>
-            <Footer/>
+            <Footer clr1={'rgb(244 244 245)'}/>
           </div>
     </div>
   );
